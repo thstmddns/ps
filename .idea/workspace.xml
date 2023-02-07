@@ -55,14 +55,22 @@
           <line>10</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2023.02.07/백준 2178 미로탐색 파이썬.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2023.02.07/백준 2667 단지 번호 붙이기 파이썬.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="visited" language="Python" />
         <watch expression="total" language="Python" />
-        <watch expression="que" language="Python" />
-        <watch expression="li" language="Python" />
+        <watch expression="visited" language="Python" />
       </configuration>
     </watches-manager>
   </component>
