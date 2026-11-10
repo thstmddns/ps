@@ -1,0 +1,22 @@
+def solution(diffs, times, limit):
+    def total_time(level):
+        re_time = times[0]
+        for d in range(1, len(diffs)):
+            if diffs[d] <= level:
+                re_time += times[d]
+            else:
+                re_time += (diffs[d] - level) * (times[d - 1] + times[d]) + times[d]
+            if re_time > limit:
+                return re_time
+        return re_time
+
+    left, right = 1, max(diffs)
+    while left < right:
+        mid = (left + right) // 2
+        total = total_time(mid)
+        if total <= limit:
+            right = mid
+        else:
+            left = mid + 1
+    return right
+             
